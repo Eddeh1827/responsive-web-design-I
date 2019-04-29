@@ -214,10 +214,11 @@ nav .logo:hover {
 div.top-content-left {
   width: 50%;
 }
-a#start-btn button {
-  margin: 0px 40%;
+#start-btn {
+  margin: 10px 35%;
   background-color: none;
-  padding: 2%;
+  padding: 5px 0;
+  width: 30%;
 }
 #container1 > div > h1 {
   font-size: 90px;
