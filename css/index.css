@@ -214,8 +214,10 @@ nav .logo:hover {
 div.top-content-left {
   width: 50%;
 }
-a#start-btn {
+a#start-btn button {
   margin: 0px 40%;
+  background-color: none;
+  padding: 2%;
 }
 #container1 > div > h1 {
   font-size: 90px;
@@ -223,11 +225,6 @@ a#start-btn {
 }
 .left > h1 {
   font-family: "Montserrat", Roboto;
-}
-.left > a > button {
-  border: 2px solid red;
-  border-radius: 2em;
-  justify-self: center;
 }
 .middle-content {
   display: flex;
@@ -245,6 +242,12 @@ div.middle-column {
 div.bottom-column {
   width: 33%;
   margin: 30px 60px 30px 0;
+}
+address {
+  padding: 20px;
+}
+#cpyrght {
+  text-align: center;
 }
 /************************************************/
 /*Services.html*/
@@ -307,97 +310,4 @@ section#bttm-content div {
   max-width: 100%;
 }
 /*end of services.html styling*/
-/*
-* {
-	box-sizing: border-box;
-  }
-  header {
-		width: 100%;
-  }
-  nav {
-	display: flex;
-	width: 100%;
-	background-color: gray;
-  }
-  nav ul {
-	  flex-direction: row;
-	  display: flex;
-	  height: 50px;
-	  width: 100%;
-  }
-  nav ul li {
-	justify-content: flex-start;
-	padding-top: 20px;
-	padding: 8px;
-  }
-  nav ul li:last-child {
-
-  }
-  nav ul li#nav-logo {
-	align-self: baseline;
-  }
-  nav ul li#nav-logo:hover {
-	  background-color: yellow;
-  }
-  .logo {
-	display: inline-block;
-	right: 5%;
-  }
-  nav a {
-	margin: 7px;
-	padding: 0px 15px;
-	text-decoration: none;
-	color: rgb(214, 197, 197);
-  }
-  div#intro {
-	margin-bottom: 10%;
-  }
-  
-  #intro div {
-	width: 48%;
-	display: inline-block;
-  }
-  .intro-left {
-	text-align: center;
-	font-size: 75px;
-	margin: auto;
-  }
-  .intro-right {
-	margin: auto;
-  }
-  button {
-	padding: 10px 25px;
-	top: 0;
-	background-color: white;
-	border: 2px solid;
-  }
-  button:hover {
-	  background-color: blue;
-	  border-radius: 25%;
-  }
-  .two-clmn {
-	display: inline-block;
-	width: 49%;
-	padding: 30px;
-  }
-  .three-clmn {
-	display: inline-block;
-	width: 33%;
-	padding: 15px;
-  }
-  .middle-img {
-	width: 100%;
-  }
-  // ** Clear floats after the columns **
-  .row:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
-  address {
-	  padding: 20px;
-  }
-  #cpyrght {
-	  text-align: center;
-  }
-  */
+/**************************************/
