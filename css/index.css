@@ -372,20 +372,26 @@ section#bttm-content div {
   .middle-content {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   .middle-content .middle-column {
-    text-align: center;
     align-content: center;
+    width: 100%;
   }
   .middle-content img.middle-img {
     width: 100%;
   }
   .bottom-content {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 4%;
+  }
+  .bottom-content .bottom-column {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 4%;
   }
 }
