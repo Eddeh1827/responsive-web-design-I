@@ -151,15 +151,17 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-
+/***************************************************************************************/
+/**************************************************************************************/
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 * {
   box-sizing: border-box;
 }
 body {
   display: flex;
   flex-direction: column;
-  width: 92%;
+  width: 75%;
   margin: 0 auto;
 }
 header,
@@ -174,20 +176,23 @@ header,
 nav {
   display: flex;
   width: 100%;
-  background-color: gray;
 }
 nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-content: center;
-  width: 80%;
+  width: 70%;
+  padding-right: 10%;
 }
 nav ul li {
-  padding: 0px 5px;
-  margin: 15px auto;
+  justify-content: flex-start;
+  font-weight: bold;
+  padding: 0;
+  margin: 20px auto;
 }
 nav ul li a {
   text-decoration: none;
+  color: gray;
 }
 nav > a {
   padding: 5px 0px;
@@ -208,23 +213,26 @@ nav .logo:hover {
 }
 #container1 {
   display: flex;
-  justify-content: space-evenly;
-  padding: 40px 120px;
+  justify-content: space-around;
+  padding: 80px 90px 80px 60px;
 }
 div.top-content-left {
   width: 50%;
 }
-#start-btn {
-  margin: 10px 35%;
-  background-color: none;
-  padding: 5px 0;
-  width: 30%;
-}
 #container1 > div > h1 {
-  font-size: 90px;
+  font-size: 70px;
   text-align: center;
 }
-.left > h1 {
+#start-btn {
+  margin: 10px 35%;
+  color: black;
+  padding: 5px 0;
+  font-weight: bold;
+  border: 1px solid black;
+  width: 40%;
+  height: 12%;
+}
+.top-content-left > h1 {
   font-family: "Montserrat", Roboto;
 }
 .middle-content {
@@ -312,3 +320,35 @@ section#bttm-content div {
 }
 /*end of services.html styling*/
 /**************************************/
+
+@media (max-width: 500px) {
+  /* start of phone styles */
+  body {
+    width: 500px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  nav > a {
+    align-self: center;
+    width: 100%;
+    padding: 0 0 5% 25%;
+    border-bottom: 1px solid black;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 0 0 5% 0;
+    text-align: center;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: gray;
+  }
+}
