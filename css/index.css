@@ -330,6 +330,9 @@ section#bttm-content div {
     display: flex;
     flex-direction: column-reverse;
   }
+  .navlist {
+    padding: 0;
+  }
   nav > a {
     align-self: center;
     width: 100%;
@@ -350,5 +353,39 @@ section#bttm-content div {
   nav ul li a {
     text-decoration: none;
     color: gray;
+  }
+  .top-content #container1 {
+    padding: 0px;
+  }
+  #container1 > div > h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .top-content-left {
+    width: 50%;
+    font-size: 60%;
+    padding-top: 0;
+  }
+  .top-content-right {
+    display: none;
+  }
+  .middle-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle-content .middle-column {
+    text-align: center;
+    align-content: center;
+  }
+  .middle-content img.middle-img {
+    width: 100%;
+  }
+  .bottom-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
